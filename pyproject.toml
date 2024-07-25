@@ -45,18 +45,25 @@ dependencies = [
     "pyclipper",
     "lmdb",
     "tqdm",
-    "numpy",
+    "numpy<2.0",
     "rapidfuzz",
-    "opencv-python<=4.6.0.66",
-    "opencv-contrib-python<=4.6.0.66",
+    "opencv-python",
+    "opencv-contrib-python",
     "cython",
-    "Pillow>=10.0.0",
+    "Pillow",
     "pyyaml",
     "python-docx",
     "beautifulsoup4",
     "fonttools>=4.24.0",
     "fire>=0.3.0",
+    "requests"
 ]
+
+[project.urls]
+homepage = "https://github.com/PaddlePaddle/PaddleOCR"
+documentation = "https://github.com/PaddlePaddle/PaddleOCR/blob/main/README.md"
+repository = "https://github.com/PaddlePaddle/PaddleOCR.git"
+issues = "https://github.com/PaddlePaddle/PaddleOCR/issues"
 
 [project.scripts]
 paddleocr = "paddleocr.paddleocr:main"
